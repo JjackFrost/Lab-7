@@ -22,7 +22,6 @@ string func2(string x){
 	}
 	return y;	
 }
-
 string func3(string x){
 	int i = 0, L = x.size();
 	string y = "";
@@ -34,8 +33,21 @@ string func3(string x){
 }
 
 int main(){
-    cout >> "Input text: "
-    cout >> "Reversed text: "
-    cout >> "Palindrome: "
+	string x;
+    cout << "Input text: ";
+	cin >> x;
+
+    cout << "Reversed text: ";
+	string y = func1(x);
+	cout << y << endl;
+
+    cout << "Palindrome: ";
+	x = func2(x);
+	y = func2(y);
+	if (x == y)
+		cout << "Yes";
+	else
+		cout << "No";
+
     return 0;
 }

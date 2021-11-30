@@ -10,14 +10,14 @@ int main(){
 	int id[N] = {123,196,225,329,420,451,515,666,690,787};
 	double gpa[N] = {1.50,2.12,4.00,3.69,2.50,2.76,3.54,2.14,3.50,1.88};
 
-    double grade;
+    double score;
     cout << "Please input GPA: ";
-    cin >> grade;
+    cin >> score;
     
     int i=0;
     while(i<N)
     {
-        if(gpa[i]>=grade)
+        if(gpa[i]>=score)
         {
             cout << id[i] << " " << name[i] << " " << gpa[i] << "\n";
         }
